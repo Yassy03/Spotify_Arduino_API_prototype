@@ -1,6 +1,8 @@
 # Arduino_SpotifyAPI_Prototype
  VSC code for serial monitor info to control spotify API player
 
+Note: users will also need to npm start in the terminal and add install node_modules folder to the project. This project uses socket.io so ensure this has also been insalled in the terminal 
+
 Run this code in Ardiuno with a Arduino Nano 33 BLE connected: 
 Note - make sure all necessary libaries are installed 
 ``` 
