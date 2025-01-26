@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify and Arduino Motion Integration</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sixtyfour+Convergence&display=swap" rel="stylesheet">
+
+
+
+
+    <!-- Bootstrap for styling -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+   
+    <link rel="stylesheet" href="style.css"> <!-- Link to your custom stylesheet -->
+
+
+    
+
+    <!-- p5.js and p5.webserial -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.6.0/p5.js"></script>
+    <script src="https://unpkg.com/@gohai/p5.webserial@^1/libraries/p5.webserial.js"></script>
+</head>
+<body class="bg-light">
+    <div class="container text-center mt-5">
+        <h1 class="mb-4">Spotify and Motion Trigger</h1>
+    
+        <!-- Spotify Authentication Section -->
+        <button class="btn btn-primary btn-lg mb-3" onclick="authenticateSpotify()">Authenticate with Spotify</button>
+    
+        <!-- Playlist Details Section -->
+        <button class="btn btn-secondary btn-lg mb-3" onclick="fetchPlaylist()">Get Playlist Details</button>
+        <div id="playlistDetails" class="mt-4 p-3 bg-white shadow-sm rounded"></div>
+    
+        <!-- Arduino Canvas Section -->
+        <div id="canvasWrapper" class="container" style="position: relative; height: 500px;">
+            <!-- The canvas will be added here by p5.js -->
+        </div>
+    </div>
+
+    <!-- Socket.IO -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- App and Sketch Logic -->
+    <script src="app.js" defer></script> 
+    <script src="sketch.js" defer></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+

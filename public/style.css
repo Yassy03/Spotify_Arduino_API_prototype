@@ -1,0 +1,160 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Supports variable weights */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Montserrat Italic';
+    src: url('fonts/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900; /* Supports variable weights */
+    font-style: italic;
+}
+
+/* Global styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; /* Spotify black */
+    color: #ffffff; /* White text */
+}
+
+/* Connect to Arduino Button Styling */
+.connect-btn {
+    background-color: #1DB954; /* Spotify green */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px; /* Rounded edges */
+    font-family: 'Montserrat', sans-serif; /* Use Montserrat font */
+    font-weight: 500; /* Adjusted weight for better consistency */
+    font-size: 16px;
+    cursor: pointer;
+    position: absolute; /* Absolute positioning within the container */
+    top: 70%; /* Vertically center */
+    left: 50%; /* Horizontally center */
+    transform: translate(-50%, -50%); /* Adjust for element dimensions */
+}
+
+.connect-btn:hover {
+    background-color: #18a746; /* Darker green on hover */
+}
+
+#canvasWrapper {
+    position: relative; /* Parent container for absolute positioning */
+    height: 500px; /* Ensure enough space for the button and canvas */
+}
+
+
+
+/* Buttons */
+button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px;
+    background-color: #1DB954; /* Spotify green */
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #18a746; /* Darker green on hover */
+}
+
+/* Container styling */
+.container {
+    padding: 20px;    
+    background-color: #121212; /* Updated to Spotify dark gray */
+    border-radius: 10px; /* Rounded corners for the container */
+}
+
+#tokenSection,
+#deviceSection {
+    display: none;
+}
+
+/* Album image styling */
+#albumImage {
+    width: 350px;
+    float: left;
+    margin: 20px;
+}
+
+/* Track details */
+#trackTitle {
+    font-size: 3em;
+    margin: 10px 0;
+}
+
+#trackArtist {
+    font-size: 2em;
+    margin: 5px 0;
+}
+
+/* Welcome text */
+.welcomeText {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#playlistDetails {
+    background-color: #1c1c1c; /* Darker gray for better contrast */
+    color: black; /* Ensure text is white */
+    padding: 15px 20px; /* Add padding for spacing */
+    border-radius: 10px; /* Rounded corners */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    max-width: 500px; /* Narrower max width */
+    margin: 10px auto; /* Center the container horizontally */
+    font-size: 16px; /* Adjust font size for readability */
+    display: flex; /* Flexbox for alignment */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Space between image and text */
+    padding-left: 10px;
+}
+
+.playlist-container {
+    display: flex; /* Flexbox for image and text alignment */
+    align-items: flex-start; /* Align content to the top */
+}
+
+.playlist-image {
+    width: 150px; /* Adjust width of the image */
+    height: 150px; /* Adjust height of the image */
+    border-radius: 10px; /* Optional: rounded corners for the image */
+    flex-shrink: 0; /* Prevent the image from resizing */
+}
+
+.playlist-text {
+    flex-grow: 1; /* Take up remaining space */
+    text-align: left; /* Align text to the left */
+    padding-left: 10px;
+}
+
+
+.playlist-text h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.playlist-text p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.playlist-text ul {
+    list-style: none;
+    padding: 5px;
+}
+
+.playlist-text li {
+    font-size: 14px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+}
